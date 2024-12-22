@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/notiflib/main/main"))()
+local notif = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/notiflib/main/main"))()
 -- [] -->> Make sure the script it's self does not get executed more then once, when executed, they will need to click the Re-Execute GUI button to restart the script. <<-- [] --
 if SCRIPT_EXECUTED or getgenv().SCRIPT_EXECUTED and not _G.SCRIPT_EXECUTED == true then
     notif:Notification("Error:","MYS Script Hub Is Already Running!","GothamSemibold","Gotham",6)
@@ -1857,7 +1857,7 @@ Callback = function()
 end,})
 
 local DontClick = Tab5:CreateButton({
-Name = "DontClick",
+Name = "Force Join Mic",
 Callback = function()
 local sound = Instance.new("Sound")  -- Create a new Sound instance
 sound.SoundId = "rbxassetid://5224155871"  -- Replace with the actual SoundId (this can be any sound asset)
